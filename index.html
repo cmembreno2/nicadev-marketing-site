@@ -5,13 +5,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description"
-        content="NICADEVELOPMENT: desarrollo y diseño de sitios web y aplicaciones web en Nicaragua. Hosting, marketing digital y soporte." />
-    <title>NICADEVELOPMENT</title>
+        content="NICADEVELOPMENT: desarrollo y diseño de sitios web en Nicaragua. Landing pages, tiendas online y aplicaciones web. Entrega rápida, soporte y cotización." />
+    <title>NICADEVELOPMENT | Desarrollo Web Nicaragua</title>
 
     <!-- Fonts (Inter) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="canonical" href="https://nicadev-marketing-site.fly.dev/" />
 
     <link rel="stylesheet" href="./styles.css" />
 </head>
@@ -46,20 +48,21 @@
             <div class="container hero__grid">
                 <div class="hero__text">
                     <p class="badge">Empresa digital en Nicaragua</p>
-                    <h1>Desarrollo y diseño web para impulsar tu negocio.</h1>
+                    <h1>Desarrollo web en Nicaragua para negocios que quieren crecer y vender más.</h1>
                     <p class="lead">
-                        Creamos sitios web y aplicaciones web según tu necesidad. Nuestro enfoque es impulsar
-                        el desarrollo digital del comercio local: hosting, posicionamiento, tiendas virtuales y más.
+                        Diseñamos sitios web modernos, tiendas online y aplicaciones web para emprendedores, profesionales y empresas en
+                        Nicaragua.
+                        Soluciones a la medida, entrega rápida y soporte real para impulsar tu negocio.
                     </p>
 
                     <div class="hero__actions">
-                        <a class="btn btn--primary" href="#contacto">Pedir consulta</a>
-                        <a class="btn btn--ghost" href="#precios">Ver precios</a>
+                        <a class="btn btn--primary" href="#contacto">Cotizar mi sitio web</a>
+                        <a class="btn btn--ghost" href="#precios">Ver paquetes y precios</a>
                     </div>
 
                     <div class="hero__trust">
                         <span class="trust__dot"></span>
-                        <span>Entrega rápida • Soporte • Diseño moderno</span>
+                        <span>Entrega rápida • Diseño profesional • Soporte</span>
                     </div>
                 </div>
 
@@ -83,62 +86,139 @@
             </div>
         </section>
 
-        <!-- Pricing quick -->
+        <!-- Target Business -->
+        <section class="section">
+            <div class="container">
+                <div class="section__head">
+                    <h2>Soluciones digitales para tu tipo de negocio</h2>
+                    <p>Diseñamos cada proyecto según la realidad de cada cliente.</p>
+                </div>
+        
+                <div class="grid cards-3">
+                    <article class="card">
+                        <h3>Emprendedores y negocios locales</h3>
+                        <p class="muted">
+                            Barberías, ferreterías, tiendas y restaurantes que necesitan
+                            presencia online profesional para atraer más clientes.
+                        </p>
+                        <p class="small muted">Ideal para empezar rápido y a bajo costo.</p>
+                    </article>
+        
+                    <article class="card">
+                        <h3>Profesionales independientes</h3>
+                        <p class="muted">
+                            Abogados, doctores, psicólogos y consultores que buscan
+                            credibilidad, imagen profesional y contacto directo con sus clientes.
+                        </p>
+                        <p class="small muted">Enfoque en confianza y posicionamiento.</p>
+                    </article>
+        
+                    <article class="card">
+                        <h3>Negocios que quieren vender online</h3>
+                        <p class="muted">
+                            Empresas que ya venden y quieren escalar con tiendas virtuales,
+                            catálogos, pagos en línea y automatización.
+                        </p>
+                        <p class="small muted">Soluciones más completas y personalizadas.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prices -->
         <section id="precios" class="section">
             <div class="container">
                 <div class="section__head">
-                    <h2>Precios claros</h2>
-                    <p>Opciones para empezar rápido o construir algo totalmente personalizado.</p>
+                    <h2>Paquetes de sitios web en Nicaragua</h2>
+                    <p>Elegí el paquete según tu etapa. Si ya vendés, el recomendado suele ser el mejor retorno.</p>
                 </div>
-
-                <div class="grid cards-4">
-                    <article class="card">
-                        <h3>Sitios Web</h3>
-                        <p class="muted">Landing / básico</p>
-                        <p class="price">desde <strong>US$150</strong></p>
+        
+                <div class="grid cards-3">
+                    <!-- Starter -->
+                    <article class="card pricing">
+                        <div class="pricing__top">
+                            <h3>Starter</h3>
+                            <p class="muted">Para emprender rápido</p>
+                        </div>
+        
+                        <p class="price"><strong>US$150</strong> <span class="muted small">/ 5 días hábiles</span></p>
+        
                         <ul class="list">
-                            <li>Entrega: 5 días hábiles</li>
-                            <li>1–3 secciones</li>
-                            <li>Responsive</li>
+                            <li>1–3 secciones (Inicio, Servicios, Contacto)</li>
+                            <li>Diseño responsive (móvil / desktop)</li>
+                            <li>Formulario de contacto</li>
+                            <li>Integración WhatsApp (botón)</li>
                         </ul>
-                        <a class="btn btn--soft" href="#contacto">Cotizar</a>
+        
+                        <p class="muted small">Ideal si estás empezando y querés presencia online profesional.</p>
+        
+                        <a class="btn btn--soft" href="#contacto">Quiero este</a>
                     </article>
-
-                    <article class="card">
-                        <h3>Hosting</h3>
-                        <p class="muted">Sitio online + soporte</p>
-                        <p class="price">desde <strong>US$29</strong></p>
+        
+                    <!-- Pro (Recommended) -->
+                    <article class="card pricing pricing--recommended">
+                        <div class="pricing__badge">Recomendado</div>
+        
+                        <div class="pricing__top">
+                            <h3>Pro</h3>
+                            <p class="muted">Para verse serio y convertir</p>
+                        </div>
+        
+                        <p class="price"><strong>US$450</strong> <span class="muted small">/ 10–14 días</span></p>
+        
                         <ul class="list">
-                            <li>SSL</li>
-                            <li>Correos</li>
-                            <li>Soporte básico</li>
+                            <li>Hasta 6 secciones (incluye About/Reviews/FAQ)</li>
+                            <li>Diseño personalizado (no plantilla genérica)</li>
+                            <li>Optimización de velocidad básica</li>
+                            <li>SEO On-Page básico (title, description, headings)</li>
+                            <li>Mapa + Chat/WhatsApp + formularios</li>
                         </ul>
-                        <a class="btn btn--soft" href="#contacto">Cotizar</a>
+        
+                        <p class="muted small">Ideal para profesionales y negocios locales que quieren más contactos.</p>
+        
+                        <a class="btn btn--primary" href="#contacto">Cotizar Pro</a>
                     </article>
-
-                    <article class="card">
-                        <h3>Marketing digital</h3>
-                        <p class="muted">Meta / Google Ads</p>
-                        <p class="price">desde <strong>US$100</strong></p>
+        
+                    <!-- Business -->
+                    <article class="card pricing pricing--dark">
+                        <div class="pricing__top">
+                            <h3>Business</h3>
+                            <p class="muted">Para vender y escalar</p>
+                        </div>
+        
+                        <p class="price"><strong>US$800+</strong> <span class="muted small">/ 3–4 semanas</span></p>
+        
                         <ul class="list">
-                            <li>Campañas</li>
-                            <li>Optimización</li>
-                            <li>Reportes</li>
+                            <li>Web avanzada o tienda online (según necesidad)</li>
+                            <li>Catálogo, reservas o pagos (si aplica)</li>
+                            <li>SEO On-Page extendido + estructura</li>
+                            <li>Automatizaciones (leads a Sheets/CRM)</li>
+                            <li>Capacitación para administrar contenido</li>
                         </ul>
-                        <a class="btn btn--soft" href="#contacto">Cotizar</a>
+        
+                        <p class="muted small">Ideal si ya vendés y querés llevar ventas y procesos al mundo digital.</p>
+        
+                        <a class="btn btn--primary" href="#contacto">Hablemos de Business</a>
                     </article>
-
-                    <article class="card card--dark">
-                        <h3>Soporte</h3>
-                        <p class="muted">Consultas y mantenimiento</p>
-                        <p class="price">desde <strong>US$20</strong></p>
-                        <ul class="list">
-                            <li>Diagnóstico</li>
-                            <li>Mejoras</li>
-                            <li>Asesoría</li>
-                        </ul>
-                        <a class="btn btn--primary" href="#contacto">Agendar</a>
-                    </article>
+                </div>
+        
+                <!-- Add-ons -->
+                <div class="addons">
+                    <h3 class="addons__title">Servicios adicionales</h3>
+                    <div class="grid cards-3">
+                        <article class="card card--plain addon">
+                            <p><strong>Hosting</strong> <span class="muted">desde US$29/año</span></p>
+                            <p class="muted small">SSL, correos y soporte básico.</p>
+                        </article>
+                        <article class="card card--plain addon">
+                            <p><strong>Soporte / Consultoría</strong> <span class="muted">desde US$20</span></p>
+                            <p class="muted small">Mejoras, diagnóstico, mantenimiento.</p>
+                        </article>
+                        <article class="card card--plain addon">
+                            <p><strong>Marketing Digital</strong> <span class="muted">desde US$100</span></p>
+                            <p class="muted small">Meta/Google Ads + optimización.</p>
+                        </article>
+                    </div>
                 </div>
             </div>
         </section>
@@ -147,7 +227,7 @@
         <section id="servicios" class="section section--alt">
             <div class="container">
                 <div class="section__head">
-                    <h2>Servicios</h2>
+                    <h2>Servicios de desarrollo web en Nicaragua</h2>
                     <p>Elegí lo que necesitás hoy, y escalamos mañana.</p>
                 </div>
 
@@ -272,7 +352,7 @@
             <div class="container">
                 <div class="grid split">
                     <div>
-                        <h2>Contáctanos</h2>
+                        <h2>Solicitá tu cotización</h2>
                         <p class="muted">
                             Contame qué necesitás y te paso propuesta y tiempo estimado.
                         </p>
