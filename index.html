@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="NICADEVELOPMENT: desarrollo y diseño de sitios web y aplicaciones web en Nicaragua. Hosting, marketing digital y soporte." />
+    <title>NICADEVELOPMENT</title>
+
+    <!-- Fonts (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="site-header">
+        <nav class="nav container">
+            <a class="brand" href="#inicio" aria-label="NICADEVELOPMENT">
+                <span class="brand__mark" aria-hidden="true">ND</span>
+                <span class="brand__name">NICADEVELOPMENT</span>
+            </a>
+
+            <button class="nav__toggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav__menu" id="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contáctanos</a></li>
+            </ul>
+
+            <a class="btn btn--primary nav__cta" href="#contacto">Consulta</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section id="inicio" class="hero">
+            <div class="container hero__grid">
+                <div class="hero__text">
+                    <p class="badge">Empresa digital en Nicaragua</p>
+                    <h1>Desarrollo y diseño web para impulsar tu negocio.</h1>
+                    <p class="lead">
+                        Creamos sitios web y aplicaciones web según tu necesidad. Nuestro enfoque es impulsar
+                        el desarrollo digital del comercio local: hosting, posicionamiento, tiendas virtuales y más.
+                    </p>
+
+                    <div class="hero__actions">
+                        <a class="btn btn--primary" href="#contacto">Pedir consulta</a>
+                        <a class="btn btn--ghost" href="#precios">Ver precios</a>
+                    </div>
+
+                    <div class="hero__trust">
+                        <span class="trust__dot"></span>
+                        <span>Entrega rápida • Soporte • Diseño moderno</span>
+                    </div>
+                </div>
+
+                <div class="hero__visual" aria-hidden="true">
+                    <div class="glass-card">
+                        <div class="glass-card__top">
+                            <div class="chip"></div>
+                            <div class="chip"></div>
+                            <div class="chip"></div>
+                        </div>
+                        <div class="glass-card__body">
+                            <div class="line w-80"></div>
+                            <div class="line w-60"></div>
+                            <div class="line w-70"></div>
+                            <div class="line w-50"></div>
+                        </div>
+                    </div>
+                    <div class="orb orb--a"></div>
+                    <div class="orb orb--b"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing quick -->
+        <section id="precios" class="section">
+            <div class="container">
+                <div class="section__head">
+                    <h2>Precios claros</h2>
+                    <p>Opciones para empezar rápido o construir algo totalmente personalizado.</p>
+                </div>
+
+                <div class="grid cards-4">
+                    <article class="card">
+                        <h3>Sitios Web</h3>
+                        <p class="muted">Landing / básico</p>
+                        <p class="price">desde <strong>US$150</strong></p>
+                        <ul class="list">
+                            <li>Entrega: 5 días hábiles</li>
+                            <li>1–3 secciones</li>
+                            <li>Responsive</li>
+                        </ul>
+                        <a class="btn btn--soft" href="#contacto">Cotizar</a>
+                    </article>
+
+                    <article class="card">
+                        <h3>Hosting</h3>
+                        <p class="muted">Sitio online + soporte</p>
+                        <p class="price">desde <strong>US$29</strong></p>
+                        <ul class="list">
+                            <li>SSL</li>
+                            <li>Correos</li>
+                            <li>Soporte básico</li>
+                        </ul>
+                        <a class="btn btn--soft" href="#contacto">Cotizar</a>
+                    </article>
+
+                    <article class="card">
+                        <h3>Marketing digital</h3>
+                        <p class="muted">Meta / Google Ads</p>
+                        <p class="price">desde <strong>US$100</strong></p>
+                        <ul class="list">
+                            <li>Campañas</li>
+                            <li>Optimización</li>
+                            <li>Reportes</li>
+                        </ul>
+                        <a class="btn btn--soft" href="#contacto">Cotizar</a>
+                    </article>
+
+                    <article class="card card--dark">
+                        <h3>Soporte</h3>
+                        <p class="muted">Consultas y mantenimiento</p>
+                        <p class="price">desde <strong>US$20</strong></p>
+                        <ul class="list">
+                            <li>Diagnóstico</li>
+                            <li>Mejoras</li>
+                            <li>Asesoría</li>
+                        </ul>
+                        <a class="btn btn--primary" href="#contacto">Agendar</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Servicios -->
+        <section id="servicios" class="section section--alt">
+            <div class="container">
+                <div class="section__head">
+                    <h2>Servicios</h2>
+                    <p>Elegí lo que necesitás hoy, y escalamos mañana.</p>
+                </div>
+
+                <div class="grid cards-3">
+                    <article class="card">
+                        <h3>Desarrollo de sitios web</h3>
+                        <p class="muted">Landing pages, corporativos, portafolios, catálogos.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Aplicaciones web</h3>
+                        <p class="muted">Inventario, ventas, facturación, paneles administrativos.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Automatizaciones y Chatbots AI</h3>
+                        <p class="muted">Flujos, integraciones, respuestas automáticas y asistentes.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nosotros -->
+        <section id="nosotros" class="section">
+            <div class="container">
+                <div class="grid split">
+                    <div class="card card--plain">
+                        <h2>Misión</h2>
+                        <p class="muted">
+                            Acercar la tecnología a tu negocio. En esta era digital, la presencia en internet es clave.
+                            Creamos soluciones a la medida que impulsen tu crecimiento online.
+                        </p>
+                    </div>
+
+                    <div class="card card--plain">
+                        <h2>Visión</h2>
+                        <p class="muted">
+                            Ser tu aliado #1 en el impulso tecnológico e innovación de negocios locales,
+                            emprendedores y comercio en Nicaragua.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews -->
+        <section class="section section--alt">
+            <div class="container">
+                <div class="section__head">
+                    <h2>Reviews</h2>
+                    <p>Empezamos con el primero. Vamos por muchos más.</p>
+                </div>
+
+                <div class="grid cards-3">
+                    <article class="review">
+                        <div class="review__top">
+                            <div class="avatar" aria-hidden="true">AG</div>
+                            <div>
+                                <p class="review__name">Álvaro Gómez</p>
+                                <div class="stars" aria-label="5 de 5">
+                                    ★★★★★
+                                </div>
+                            </div>
+                        </div>
+                        <p class="review__text">
+                            “Gran experiencia trabajando con NICADEVELOPMENT. Profesionales y atentos a los detalles.”
+                        </p>
+                    </article>
+
+                    <article class="review review--placeholder">
+                        <div class="review__top">
+                            <div class="avatar avatar--ghost" aria-hidden="true">+</div>
+                            <div>
+                                <p class="review__name">Tu negocio aquí</p>
+                                <p class="muted">Próximamente</p>
+                            </div>
+                        </div>
+                        <p class="review__text">
+                            Si ya trabajamos juntos, pedime el link para dejar tu reseña.
+                        </p>
+                        <a class="btn btn--soft" href="#contacto">Quiero dejar un review</a>
+                    </article>
+
+                    <article class="review">
+                        <div class="review__top">
+                            <div class="avatar" aria-hidden="true">ND</div>
+                            <div>
+                                <p class="review__name">Tu próxima reseña</p>
+                                <div class="stars" aria-label="5 de 5">★★★★★</div>
+                            </div>
+                        </div>
+                        <p class="review__text">
+                            “Entrega rápida, comunicación clara y un sitio que se ve moderno.”
+                        </p>
+                        <p class="muted small">*Texto de ejemplo</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tecnologías -->
+        <section class="section">
+            <div class="container">
+                <div class="section__head">
+                    <h2>Tecnologías</h2>
+                    <p>Stack moderno para resultados rápidos y escalables.</p>
+                </div>
+
+                <div class="tech">
+                    <span class="pill">HTML</span>
+                    <span class="pill">CSS</span>
+                    <span class="pill">JavaScript</span>
+                    <span class="pill">React</span>
+                    <span class="pill">Node.js</span>
+                    <span class="pill">WordPress</span>
+                    <span class="pill">MySQL</span>
+                    <span class="pill">PostgreSQL</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="section section--alt">
+            <div class="container">
+                <div class="grid split">
+                    <div>
+                        <h2>Contáctanos</h2>
+                        <p class="muted">
+                            Contame qué necesitás y te paso propuesta y tiempo estimado.
+                        </p>
+
+                        <div class="contact__info">
+                            <p><strong>WhatsApp:</strong> +505 0000 0000</p>
+                            <p><strong>Email:</strong> nicadevelopment@email.com</p>
+                        </div>
+                    </div>
+
+                    <form class="form" action="#" method="post">
+                        <label>
+                            Nombre
+                            <input name="name" type="text" placeholder="Tu nombre" required />
+                        </label>
+
+                        <label>
+                            WhatsApp o Email
+                            <input name="contact" type="text" placeholder="Tu contacto" required />
+                        </label>
+
+                        <label>
+                            ¿Qué necesitas?
+                            <select name="service" required>
+                                <option value="" disabled selected>Seleccionar</option>
+                                <option>Sitio web</option>
+                                <option>Tienda virtual</option>
+                                <option>Aplicación web</option>
+                                <option>Soporte / consultoría</option>
+                                <option>Marketing digital</option>
+                                <option>Automatización / Chatbot AI</option>
+                            </select>
+                        </label>
+
+                        <label>
+                            Detalles
+                            <textarea name="details" rows="4"
+                                placeholder="Contame el objetivo, ejemplo: menú, catálogo, reservas, etc."></textarea>
+                        </label>
+
+                        <button class="btn btn--primary" type="submit">Enviar</button>
+                        <p class="muted small">
+                            *Este form es base. Lo conectamos a WhatsApp, email, Google Sheets o un CRM cuando quieras.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__grid">
+            <div>
+                <p class="footer__brand">NICADEVELOPMENT</p>
+                <p class="muted small">Desarrollo web • Hosting • Marketing • Automatizaciones</p>
+            </div>
+
+            <div class="footer__links">
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+
+            <div class="footer__social">
+                <a href="#" aria-label="Facebook">Fb</a>
+                <a href="#" aria-label="LinkedIn">In</a>
+                <a href="#" aria-label="Email">@</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile nav (simple, production-friendly)
+        const toggle = document.querySelector(".nav__toggle");
+        const menu = document.querySelector(".nav__menu");
+        toggle?.addEventListener("click", () => {
+            const open = menu.classList.toggle("is-open");
+            toggle.setAttribute("aria-expanded", open ? "true" : "false");
+        });
+    </script>
+</body>
+
+</html>
