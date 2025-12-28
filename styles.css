@@ -42,6 +42,10 @@ a {
     margin: 0 auto;
 }
 
+section[id] {
+    scroll-margin-top: 120px;
+}
+
 /* Header / Nav */
 .site-header {
     position: sticky;
@@ -67,21 +71,15 @@ a {
     letter-spacing: 0.4px;
 }
 
-.brand__mark {
-    width: 40px;
-    height: 40px;
+.brand__logo {
+    width: clamp(160px, 24vw, 240px);
+    height: 44px;
+    display: block;
     border-radius: 12px;
-    display: grid;
-    place-items: center;
-    background: linear-gradient(135deg,
-            rgba(37, 99, 235, 0.95),
-            rgba(37, 99, 235, 0.35));
-    border: 1px solid rgba(37, 99, 235, 0.35);
-    box-shadow: 0 10px 30px rgba(37, 99, 235, 0.25);
-}
-
-.brand__name {
-    font-size: 14px;
+    object-fit: cover;
+    object-position: left center;
+    box-shadow: none;
+    border: none;
 }
 
 .nav__menu {
@@ -633,7 +631,7 @@ textarea {
 
 .footer__grid {
     display: grid;
-    grid-template-columns: 1.2fr 1fr 0.6fr;
+    grid-template-columns: 1fr auto;
     align-items: center;
     gap: 16px;
 }
@@ -643,7 +641,14 @@ textarea {
     font-weight: 900;
 }
 
-.footer__links,
+.footer__logo {
+    width: clamp(140px, 20vw, 220px);
+    height: 36px;
+    display: block;
+    object-fit: cover;
+    object-position: left center;
+}
+
 .footer__social {
     display: flex;
     gap: 14px;
@@ -772,7 +777,6 @@ textarea {
         grid-template-columns: 1fr;
     }
 
-    .footer__links,
     .footer__social {
         justify-content: flex-start;
     }
