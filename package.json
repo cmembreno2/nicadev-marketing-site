@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "node --watch server.js --watch src"
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/cmembreno2/nicadev-marketing-site/issues"
   },
-  "homepage": "https://github.com/cmembreno2/nicadev-marketing-site#readme"
+  "homepage": "https://github.com/cmembreno2/nicadev-marketing-site#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
 }
