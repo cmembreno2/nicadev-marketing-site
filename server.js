@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs/promises');
 const path = require('path');
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const ROOT_DIR = __dirname;
 
 const MIME_TYPES = {
@@ -42,11 +42,13 @@ const server = http.createServer(async (req, res) => {
       return;
     }
 
+    console.error(error);
+
     res.writeHead(500, { 'Content-Type': 'text/plain; charset=utf-8' });
     res.end('Internal server error');
   }
 });
 
-server.listen(PORT, () => {
-  console.log(`Serving http://localhost:${PORT}`);
+server.listen(PORT, '0.0.0.0', () => {
+  console.log(`Server running on port ${PORT}`);
 });

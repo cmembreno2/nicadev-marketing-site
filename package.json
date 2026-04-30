@@ -2,7 +2,6 @@
   "name": "marketing_website",
   "version": "1.0.0",
   "description": "Static marketing website for NICADEVELOPMENT built with plain HTML, CSS, and JavaScript.",
-  "type": "module",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
