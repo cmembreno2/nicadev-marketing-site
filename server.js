@@ -1,20 +1,52 @@
-// server.js
-    import { createServer } from 'http';
-    import { readFile } from 'fs/promises';
-    import { extname } from 'path';
+const http = require('http');
+const fs = require('fs/promises');
+const path = require('path');
 
-    const mime = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript' };
+const PORT = 3000;
+const ROOT_DIR = __dirname;
 
-    const server = createServer(async (req, res) => {
-      const file = req.url === '/' ? 'index.html' : req.url.slice(1);
-      try {
-        const data = await readFile(file);
-        res.writeHead(200, { 'Content-Type': mime[extname(file)] || 'text/plain' });
-        res.end(data);
-      } catch {
-        res.writeHead(404);
-        res.end('Not found');
-      }
-    });
+const MIME_TYPES = {
+  '.html': 'text/html; charset=utf-8',
+  '.css': 'text/css; charset=utf-8',
+  '.js': 'application/javascript; charset=utf-8',
+  '.png': 'image/png',
+  '.jpg': 'image/jpeg',
+  '.jpeg': 'image/jpeg',
+  '.svg': 'image/svg+xml'
+};
 
-    server.listen(3000, () => console.log('Serving http://localhost:3000'));
+const server = http.createServer(async (req, res) => {
+  try {
+    const requestUrl = new URL(req.url || '/', `http://${req.headers.host || 'localhost'}`);
+    const pathname = decodeURIComponent(requestUrl.pathname);
+
+    const relativePath = pathname === '/' ? 'index.html' : pathname.replace(/^\/+/, '');
+    const resolvedPath = path.resolve(ROOT_DIR, relativePath);
+
+    if (!resolvedPath.startsWith(ROOT_DIR + path.sep) && resolvedPath !== path.join(ROOT_DIR, 'index.html')) {
+      res.writeHead(403, { 'Content-Type': 'text/plain; charset=utf-8' });
+      res.end('Forbidden');
+      return;
+    }
+
+    const fileBuffer = await fs.readFile(resolvedPath);
+    const extension = path.extname(resolvedPath).toLowerCase();
+    const contentType = MIME_TYPES[extension] || 'application/octet-stream';
+
+    res.writeHead(200, { 'Content-Type': contentType });
+    res.end(fileBuffer);
+  } catch (error) {
+    if (error.code === 'ENOENT') {
+      res.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
+      res.end('Not found');
+      return;
+    }
+
+    res.writeHead(500, { 'Content-Type': 'text/plain; charset=utf-8' });
+    res.end('Internal server error');
+  }
+});
+
+server.listen(PORT, () => {
+  console.log(`Serving http://localhost:${PORT}`);
+});

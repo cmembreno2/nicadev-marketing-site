@@ -15,7 +15,7 @@
 
     <link rel="canonical" href="https://nicadev-marketing-site.fly.dev/" />
 
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="/src/styles/main.css" />
 </head>
 
 <body>
@@ -23,7 +23,7 @@
     <header class="site-header">
         <nav class="nav container">
             <a class="brand" href="#inicio" aria-label="NICADEVELOPMENT">
-                <img class="brand__logo" src="./public/images/logo.png" alt="Logotipo de NICADEVELOPMENT"
+                <img class="brand__logo" src="/public/images/logo.png" alt="Logotipo de NICADEVELOPMENT"
                     width="1536" height="1024" loading="eager" decoding="async" />
             </a>
 
@@ -415,7 +415,7 @@
         <div class="container footer__grid">
             <div>
                 <p class="footer__brand">
-                    <img class="footer__logo" src="./public/images/logo.png" alt="Logotipo de NICADEVELOPMENT"
+                    <img class="footer__logo" src="/public/images/logo.png" alt="Logotipo de NICADEVELOPMENT"
                         width="1536" height="1024" loading="lazy" decoding="async">
                 </p>
                 <p class="muted small">Desarrollo web • Hosting • Marketing • Automatizaciones</p>
@@ -429,15 +429,7 @@
         </div>
     </footer>
 
-    <script>
-        // Mobile nav (simple, production-friendly)
-        const toggle = document.querySelector(".nav__toggle");
-        const menu = document.querySelector(".nav__menu");
-        toggle?.addEventListener("click", () => {
-            const open = menu.classList.toggle("is-open");
-            toggle.setAttribute("aria-expanded", open ? "true" : "false");
-        });
-    </script>
+    <script src="/src/js/main.js" defer></script>
 </body>
 
 </html>
