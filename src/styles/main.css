@@ -470,8 +470,7 @@ section[id] {
 
 .review__top {
     display: flex;
-    align-items: center;
-    gap: 12px;
+    align-items: flex-start;
     margin-bottom: 10px;
 }
 
